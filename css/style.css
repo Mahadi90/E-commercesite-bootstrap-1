@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+:root{
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --pink: #e5345b;
+}
+body{
+    font-family: var(--sm-font);
+}
+/* button */
+.bg-primary{
+    background-color: var(--pink) !important;
+}
+
+.btn:not(.nav-btn button){
+    background-color: transparent;
+    color: var(--pink);
+    padding: 10px 28px;
+    border-radius: 30px;
+    border: 2px solid var(--pink);
+    padding: 7px 30px;
+}
+.btn:not(.nav-btn button):hover{
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
+}
+.navbar{
+    transition: .7s;
+}
+.navbar.scrolled{
+    background-color: white !important;
+    padding: 7px 0;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.226);
+}
+.navbar-brand img{
+    width: 30px;
+}
+.navbar-brand span{
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: var(--pink);
+}
+.nav-link:hover{
+    color: var(--pink)!important;
+}
+/* header part start here */
+ 
+ #header-1{
+     background-image: url(../images/banner-img-1.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+ #header-2{
+    background-image: url(../images/banner-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.carousel-indicators{
+    margin-bottom: 25px;
+}
+
+.indicator{
+    width: 40px;
+    height: 5px;
+    margin: auto 3px;
+    background-color: var(--pink);
+    border: none
+}
+.carousel-control-prev,.carousel-control-next{
+    background-color: transparent;
+    border: none;
+}
+
+/* collection part start here */
+
+.title h2::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 50px;
+    background-color: var(--pink);
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.collection button:focus{
+    box-shadow: none;
+}
+
+.active-filter-btn{
+    background-color: var(--pink)!important;
+    color: #fff !important;
+}
+.collection-img span{
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+@media all and (max-width:776px){
+    .nav-item{
+        border-bottom: 0.5px solid rgba(0,0,0,0.05);
+    }
+}

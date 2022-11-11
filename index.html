@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap E-commerce site-1</title>
+
+    <!-- font aweosme css link -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap css link -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- style css link -->
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    
+    <!-- navbar start here-->
+
+    <nav  id="navbar" class="navbar navbar-expand-lg navbar-light bg-transparent py-4 fixed-top">
+        <div class="container">
+          <a class="navbar-brand d-flex justify-content-between align-items-center order-lg-0" href="#">
+              <img src="images/shopping-bag-icon.png" alt="">
+              <span class="text-uppercase ms-2 fw-lighter">Mahadi</span>
+          </a>
+
+          <div class="order-lg-2 d-flex nav-btn">
+            <button class="btn position-relative">
+                <i class="fa-solid fa-cart-arrow-down"></i>
+                <span class="position-absolute  top-0  start-100 bg-primary translate-middle badge">5</span>
+            </button>
+            <button class="btn position-relative">
+                <i class="fa-solid fa-heart"></i>
+                <span class="position-absolute  top-0  start-100 bg-primary translate-middle badge">2</span>
+            </button>
+            <button class="btn">
+                <i class="fa-solid fa-search"></i>
+            </button>
+          </div>
+
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+          <div class="collapse navbar-collapse order-lg-1" id="navbarNav">
+            <ul class="navbar-nav mx-auto text-center">
+                <li class="nav-item p-2"><a href="#home" class="nav-link text-dark">Home</a></li>
+                <li class="nav-item p-2"><a href="#collection" class="nav-link text-dark">Collection</a></li>
+                <li class="nav-item p-2"><a href="#special" class="nav-link text-dark">Specials</a></li>
+                <li class="nav-item p-2"><a href="#blog" class="nav-link text-dark">Blogs</a></li>
+                <li class="nav-item p-2"><a href="#about" class="nav-link text-dark">About Us</a></li>
+                <li class="nav-item p-2  border-0"><a href="#popular" class="nav-link text-dark">Popular</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+     <!-- home Start here -->
+     
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+       
+        <!-- carousel-indicators -->
+
+        <div class="carousel-indicators">
+          <button class="indicator" type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button class="indicator" type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+
+        <!-- carousel-inner -->
+
+        <div id="home" class="carousel-inner">
+
+   <header id="header-1" class="vh-100 carousel-item active" style="padding-top: 104px;">
+      <div class="container h-100 d-flex align-items-center justify-content-center">
+        <div class="text-center">
+          <h2 class="text-white text-uppercase">Best Collection</h2>
+          <h1 class=" text-dark text-uppercase fw-bold py-2">New Arrivals</h1>
+          <a href="#" class="btn mt-3 text-uppercase fw-bold">Shop Now</a>
+        </div>
+      </div>
+   </header>  
+   
+   <header id="header-2" class="vh-100 carousel-item" style="padding-top: 104px;">
+    <div class="container h-100 d-flex align-items-center justify-content-center">
+      <div class="text-center">
+        <h2 class="text-danger text-uppercase">Best Price & Offer</h2>
+        <h1 class=" text-danger text-uppercase fw-bold py-2">New Season</h1>
+        <a href="#" class="btn mt-3 text-uppercase fw-bold">Buy Now</a>
+      </div>
+    </div>
+ </header> 
+ </div>
+
+ <!-- carousel button -->
+
+ <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Next</span>
+</button>
+ </div>
+
+ <!-- collection section start here -->
+
+ <section class="py-5" id="collection">
+   <div class="container">
+     <div class="title text-center">
+       <h2 class="position-relative d-inline-block">New Collection</h2>
+     </div>
+
+     <div id="" class="row collection g-0">
+       <div class="d-flex justify-content-center flex-wrap mt-5 filter-button-group">
+         <button data-filter="*" type="button" class="btn m-2 active-filter-btn">All</button>
+         <button data-filter=".best" type="button" class="btn m-2">Best Seller</button>
+         <button data-filter=".feat" type="button" class="btn m-2">Featured</button>
+         <button data-filter=".new" type="button" class="btn m-2">New Arrivals</button>
+       </div>
+
+       <div class="collection-list mt-4 row gx-0 gy-3">
+
+         <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+            <div class="collection-img position-relative ">
+              <img src="images/c_formal_gray_shirt.png" alt="" class="w-100">
+              <span class="position-absolute texty-white bg-danger align-items-center text-white d-flex justify-content-center">Sale</span>
+            </div>
+            <div class="text-center">
+              <div class="rating mt-3">
+                <span class="text-danger"><i class="fas fa-star"></i></span>
+                <span class="text-danger"><i class="fas fa-star"></i></span>
+                <span class="text-danger"><i class="fas fa-star"></i></span>
+                <span class="text-danger"><i class="fas fa-star"></i></span>
+                <span class="text-danger"><i class="fas fa-star"></i></span>
+              </div>
+              <p class="text-uppercase my-1">gray Shirt</p>
+              <span class="fw-bold">$ 45.50</span>
+            </div>
+         </div>
+
+         <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat">
+          <div class="collection-img position-relative ">
+            <img src="images/c_pant_girl.png" alt="" class="w-100">
+            <span class="position-absolute texty-white bg-danger align-items-center text-white d-flex justify-content-center">Sale</span>
+          </div>
+          <div class="text-center">
+            <div class="rating mt-3">
+              <span class="text-danger"><i class="fas fa-star"></i></span>
+              <span class="text-danger"><i class="fas fa-star"></i></span>
+              <span class="text-danger"><i class="fas fa-star"></i></span>
+              <span class="text-danger"><i class="fas fa-star"></i></span>
+              <span class="text-danger"><i class="fas fa-star"></i></span>
+            </div>
+            <p class="text-uppercase my-1">Girl Pant</p>
+            <span class="fw-bold">$ 36.50</span>
+          </div>
+       </div>
+
+       <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
+        <div class="collection-img position-relative ">
+          <img src="images/c_polo-shirt.png" alt="" class="w-100">
+          <span class="position-absolute texty-white bg-danger align-items-center text-white d-flex justify-content-center">Sale</span>
+        </div>
+        <div class="text-center">
+          <div class="rating mt-3">
+            <span class="text-danger"><i class="fas fa-star"></i></span>
+            <span class="text-danger"><i class="fas fa-star"></i></span>
+            <span class="text-danger"><i class="fas fa-star"></i></span>
+            <span class="text-danger"><i class="fas fa-star"></i></span>
+            <span class="text-danger"><i class="fas fa-star"></i></span>
+          </div>
+          <p class="text-uppercase my-1">Polo Shirt</p>
+          <span class="fw-bold">$ 54.50</span>
+        </div>
+     </div>
+
+     <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+      <div class="collection-img position-relative ">
+        <img src="images/c_shirt-girl.png" alt="" class="w-100">
+        <span class="position-absolute texty-white bg-danger align-items-center text-white d-flex justify-content-center">Sale</span>
+      </div>
+      <div class="text-center">
+        <div class="rating mt-3">
+          <span class="text-danger"><i class="fas fa-star"></i></span>
+          <span class="text-danger"><i class="fas fa-star"></i></span>
+          <span class="text-danger"><i class="fas fa-star"></i></span>
+          <span class="text-danger"><i class="fas fa-star"></i></span>
+          <span class="text-danger"><i class="fas fa-star"></i></span>
+        </div>
+        <p class="text-uppercase my-1">girl Shirt</p>
+        <span class="fw-bold">$ 45.50</span>
+      </div>
+   </div>
+
+   <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat">
+    <div class="collection-img position-relative ">
+      <img src="images/c_t-shirt_men.png" alt="" class="w-100">
+      <span class="position-absolute texty-white bg-danger align-items-center text-white d-flex justify-content-center">Sale</span>
+    </div>
+    <div class="text-center">
+      <div class="rating mt-3">
+        <span class="text-danger"><i class="fas fa-star"></i></span>
+        <span class="text-danger"><i class="fas fa-star"></i></span>
+        <span class="text-danger"><i class="fas fa-star"></i></span>
+        <span class="text-danger"><i class="fas fa-star"></i></span>
+        <span class="text-danger"><i class="fas fa-star"></i></span>
+      </div>
+      <p class="text-uppercase my-1">Men Shirt</p>
+      <span class="fw-bold">$ 62.50</span>
+    </div>
+ </div>
+
+ <div class="col-md-6 col-lg-4 col-xl-3 p-2 new feat">
+  <div class="collection-img position-relative ">
+    <img src="images/c_tunic-shirt_girl.png" alt="" class="w-100">
+    <span class="position-absolute texty-white bg-danger align-items-center text-white d-flex justify-content-center">Sale</span>
+  </div>
+  <div class="text-center">
+    <div class="rating mt-3">
+      <span class="text-danger"><i class="fas fa-star"></i></span>
+      <span class="text-danger"><i class="fas fa-star"></i></span>
+      <span class="text-danger"><i class="fas fa-star"></i></span>
+      <span class="text-danger"><i class="fas fa-star"></i></span>
+      <span class="text-danger"><i class="fas fa-star"></i></span>
+    </div>
+    <p class="text-uppercase my-1">Tunic Shirt</p>
+    <span class="fw-bold">$ 48.50</span>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4 col-xl-3 p-2 best new">
+  <div class="collection-img position-relative ">
+    <img src="images/c_undershirt.png" alt="" class="w-100">
+    <span class="position-absolute texty-white bg-danger align-items-center text-white d-flex justify-content-center">Sale</span>
+  </div>
+  <div class="text-center">
+    <div class="rating mt-3">
+      <span class="text-danger"><i class="fas fa-star"></i></span>
+      <span class="text-danger"><i class="fas fa-star"></i></span>
+      <span class="text-danger"><i class="fas fa-star"></i></span>
+      <span class="text-danger"><i class="fas fa-star"></i></span>
+      <span class="text-danger"><i class="fas fa-star"></i></span>
+    </div>
+    <p class="text-uppercase my-1">Under Shirt</p>
+    <span class="fw-bold">$ 63.50</span>
+  </div>
+</div>
+
+<div class="col-md-6 col-lg-4 col-xl-3 p-2 feat best">
+  <div class="collection-img position-relative ">
+    <img src="images/c_western-shirt.png" alt="" class="w-100">
+    <span class="position-absolute texty-white bg-danger align-items-center text-white d-flex justify-content-center">Sale</span>
+  </div>
+  <div class="text-center">
+    <div class="rating mt-3">
+      <span class="text-danger"><i class="fas fa-star"></i></span>
+      <span class="text-danger"><i class="fas fa-star"></i></span>
+      <span class="text-danger"><i class="fas fa-star"></i></span>
+      <span class="text-danger"><i class="fas fa-star"></i></span>
+      <span class="text-danger"><i class="fas fa-star"></i></span>
+    </div>
+    <p class="text-uppercase my-1">Wastern Shirt</p>
+    <span class="fw-bold">$ 28.50</span>
+  </div>
+</div>
+       </div>
+     </div>
+   </div>
+ </section>
+
+    <!-- jquary js link -->
+
+    <script src="js/jquery-3.6.1.js"></script>
+
+    <!-- isotop filter js link -->
+   
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+    <!-- bootstrap js link -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- main js link -->
+
+    <script src="js/main.js"></script>
+</body>
+</html>
